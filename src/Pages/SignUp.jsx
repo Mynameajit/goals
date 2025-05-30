@@ -1,9 +1,8 @@
-import { Person2 } from '@mui/icons-material'
-import { Button, CircularProgress, Paper, Stack, TextField, Typography, useMediaQuery } from '@mui/material'
-import { buttonBgColor } from '../utils/color.js';
+import { Person2 } from '@mui/icons-material';
+import { Button, CircularProgress, Stack, Typography, useMediaQuery } from '@mui/material';
 import { useUserContext } from '../Context/userContex';
 import goalsImg from "../assets/goalsImg.jpg";
-
+export const buttonBgColor = "linear-gradient(to right, #2600d9, #ff00bf)"
 const input = {
     background: "none",
     outline: "none",
@@ -56,7 +55,7 @@ const Signup = () => {
         >
 
             <Stack
-            mt={4}
+                mt={4}
                 minHeight={_600 ? !isLogin ? "480px" : "400px" : !isLogin ? "480px" : "400px"}
                 width={_600 ? "95%" : "400px"}
                 padding={"1rem"}
@@ -158,9 +157,9 @@ const Signup = () => {
                     mt={2}
                     variant='h4' fontSize={_600 ? "1rem" : "1rem"}>
                     {isLogin ? "I have don'n account ?" : "I have a account ? "}
-                    <span 
-                    onClick={()=>setIsLogin((pre)=>!pre)}
-                    style={{ color: "orange", textDecoration: "underline", cursor: "pointer" }} >
+                    <span
+                        onClick={() => setIsLogin((pre) => !pre)}
+                        style={{ color: "orange", textDecoration: "underline", cursor: "pointer" }} >
                         {isLogin ? " Register" : " Login"}
                     </span>
                 </Typography>
