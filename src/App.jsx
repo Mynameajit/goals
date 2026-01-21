@@ -14,6 +14,25 @@ const PageNotFound = lazy(() => import('./Components/PageNotFound.jsx'));
 const App = () => {
   const { isAuth } = useUserContext();
 
+
+  // let arr = [300, 8, 900, 400, 9];
+
+  // for (let i = 0; i < arr.length - 1; i++) {
+  //   for (let j = 0; j < arr.length - i - 1; j++) {
+
+  //     console.log(arr[j]);
+  //     console.log(arr[j+1]);
+      
+      // if (arr[j] > arr[j + 1]) {
+      //   let temp = arr[j];
+      //   arr[j] = arr[j + 1];
+      //   arr[j + 1] = temp;
+      // }
+  //   }
+  // }
+
+  // console.log(arr); // Output: [8, 9, 300, 400, 900]
+
   return (
     <BrowserRouter>
       <Suspense fallback={<Loader />}>
@@ -30,6 +49,9 @@ const App = () => {
               </AuthRoute>
             }
           />
+
+
+
 
           <Route path='*' element={<PageNotFound />} />
         </Routes>

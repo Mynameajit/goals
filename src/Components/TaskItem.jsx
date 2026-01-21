@@ -84,9 +84,6 @@ const getOverdueDays = (dueDateStr) => {
 // ============== Main components =======
 const TaskItem = ({ tasks, onToggleComplete, onDelete, onUpdate }) => {
   const { deliteLoading } = UseGoalsProvider() || {}
-  tasks.map((e) => {
-    console.log(e)
-  })
 
 
   return (

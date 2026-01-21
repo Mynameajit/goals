@@ -91,7 +91,7 @@ const TaskList = () => {
           padding: isMobile ? 3 : 5,
           borderRadius: 4,
           margin: "auto",
-          width: { xs: "100%", md: "65%" },
+          width: { xs: "100%", md: "75%" },
           minHeight: "100vh"
         }}
       >
