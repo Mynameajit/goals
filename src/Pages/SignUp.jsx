@@ -1,6 +1,5 @@
 import { Person2 } from '@mui/icons-material'
 import { Button, CircularProgress, Paper, Stack, TextField, Typography, useMediaQuery } from '@mui/material'
-import { buttonBgColor } from '../utils/color';
 import { useUserContext } from '../Context/userContex';
 import goalsImg from "../assets/goalsImg.jpg";
 
@@ -15,7 +14,7 @@ const input = {
 }
 
 
-
+const buttonBgColor="linear-gradient(to right, #2600d9, #ff00bf)" 
 
 const Signup = () => {
 

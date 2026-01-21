@@ -16,12 +16,14 @@ import {
     useMediaQuery
 } from '@mui/material'
 import { UseGoalsProvider } from '../Context/goalsContex'
-import { buttonBgColor } from '../utils/color'
 import { Close } from '@mui/icons-material';
 
 const priorities = ["Low", "Medium", "High"];
 
 const AddDialog = () => {
+
+const buttonBgColor="linear-gradient(to right, #2600d9, #ff00bf)" 
+
     const {
         openAddGolsDialog,
         setOpenAddGoalsDialog,

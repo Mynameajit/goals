@@ -1,12 +1,11 @@
 import { Button, CircularProgress, Stack, Tooltip, Typography } from "@mui/material";
 import { Add, ArrowForward, Logout, NoteAlt } from "@mui/icons-material";
-import { headerBg } from "../utils/color";
 import { useUserContext } from "../Context/userContex";
 import { UseGoalsProvider } from "../Context/goalsContex";
 import goalsLogo from '../assets/goalslogo.png';
 
 const Header = () => {
-
+const headerBg="linear-gradient(to right, #2600d9, #ff00bf)" 
 
   const { handleLogin, handleLogout, isAuth,isLoading } = useUserContext()
   const { setOpenAddGoalsDialog, openAddGolsDialog } = UseGoalsProvider() || {}
